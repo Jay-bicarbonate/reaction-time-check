@@ -1,0 +1,88 @@
+body {
+  background-color: #121212;
+  color: #fff;
+}
+
+input.form-control,
+button.btn {
+  background-color: #343a40;
+  color: #fff;
+  border-color: #343a40;
+}
+
+input.form-control::placeholder {
+  color: #868e96;
+}
+
+input.form-control:focus,
+button.btn:focus {
+  background-color: #495057;
+  color: #fff;
+  border-color: #343a40;
+}
+
+.main-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.response-cont{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10vh;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-container {
+  height: calc(100vh - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-center {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
